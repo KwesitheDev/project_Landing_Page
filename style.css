@@ -15,7 +15,14 @@ body{
 
 .header-top{
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between; 
+    align-items: center; 
+      
+}
+
+.links{
+    display: flex;
+    gap: 8px;
 }
 
 .header-bottom{
@@ -30,12 +37,9 @@ body{
 
 .info{
     display: flex;
-    flex-direction: column;
+  
 }
 
-.info{
-    display: flex;
-}
 
 .info-box{
     display: flex;
@@ -43,8 +47,45 @@ body{
 }
 
 .info-box img{
-    width: 20%;
+    width: 90%;
   height: 150px; 
   object-fit: cover;
   text-wrap: wrap;
+}
+.quote-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-content p{
+    text-align: end;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.action-section{
+    display: flex;
+    justify-content: center;
+}
+
+.action-section div{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;
+    align-items: center;*/
+}
+
+.action-main p{
+    margin: 0px;
+}
+
+.footer{
+    text-align: center;
 }
