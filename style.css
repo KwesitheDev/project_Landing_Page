@@ -3,14 +3,33 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
+    margin: 0px;
+    box-sizing: content-box;
+    min-width: 300px;
+  
 }
 
+
+.header,
+.info-section,
+.quote-section,
+.action-section,
+.footer{
+    padding-left: 32px;
+    padding-right: 32px;
+    
+}
+
+.header,
+.footer{
+    background-color: #1F2937;
+}
+
+/* Header Section */
 .header{
     display: flex;
     flex-direction: column;
+    padding-bottom: 32px;
 }
 
 .header-top{
@@ -18,6 +37,12 @@ body{
     justify-content: space-between; 
     align-items: center; 
       
+}
+
+.logo{
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
 }
 
 .links{
@@ -28,39 +53,16 @@ body{
 .header-bottom{
     display: flex;
 }
+.header-info p{
+    color: #E5E7EB;
+    font-size: medium;
+}
 
 .header-bottom img{
     width: 100%;
   height: 300px; 
   object-fit: cover;
-}
-
-.info{
-    display: flex;
-  
-}
-
-
-.info-box{
-    display: flex;
-    flex-direction: column;
-}
-
-.info-box img{
-    width: 90%;
-  height: 150px; 
-  object-fit: cover;
-  text-wrap: wrap;
-}
-.quote-section{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.quote-content p{
-    text-align: end;
+  min-width: 180px;
 }
 
 li{
@@ -68,11 +70,82 @@ li{
 }
 a{
     text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
 }
+
+.main-title{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+/* Info Section */
+
+.info{
+    display: flex;
+    gap: 8px;
+  
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    min-width: 90vw;
+    max-width: 95vw;
+}
+
+.info-head{
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.info-box p{
+    color: #1F2937;
+}
+
+
+.info-box img{
+    width: 100%;
+  height: 150px; 
+  object-fit: cover;
+  text-wrap: wrap;
+  border-radius: 5px;
+}
+
+/* Quote Section */
+
+.quote-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding-top: 32px;
+}
+
+.quote-content p{
+    text-align: end;
+}
+
+.quote-content{
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1F2937;
+}
+
+/* Action Section */
 
 .action-section{
     display: flex;
     justify-content: center;
+    gap: 8px;
 }
 
 .action-section div{
@@ -86,6 +159,45 @@ a{
     margin: 0px;
 }
 
+
+
+
+.action-section{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.action-section-header{
+    font-weight: bold;
+}
+
+/* Footer Section */
 .footer{
     text-align: center;
+    color: #F9FAF8;
+    font-weight: 550;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+/* Others */
+
+.book-consultation{
+    border: 1px solid white;
+}
+
+button{
+    background-color: #3882F6;
+    border-radius: 5px;
+    border-style: hidden;
+    color: #E5E7EB;
+    font-weight: bold;
+    height: fit-content;
+    align-self: center;
 }
